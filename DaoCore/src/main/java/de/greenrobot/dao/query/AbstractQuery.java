@@ -58,6 +58,15 @@ abstract class AbstractQuery<T> {
         this.parameters = parameters;
         ownerThread = Thread.currentThread();
     }
+    
+    public String getSql() {
+        return sql;
+    }
+
+    public String[] getParameters() {
+        return parameters;
+    }
+
 
     // public void compile() {
     // // TODO implement compile
